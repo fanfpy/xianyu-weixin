@@ -1,0 +1,32 @@
+<view class='top-card'>
+  <view class='title'>
+    <text >标题品牌型号买家搜索内容</text>
+  </view>
+  <view class='link'></view>
+  <view class='describle'>
+    <text>商品描述</text>
+  </view>
+
+  <view class='img-span'>
+    <image class='img'></image>
+    <image class='img'></image>
+    <button></button>
+  </view> 
+</view>
+
+<view class='buttom-card'>
+   <view class='span'> 
+     <text>价格</text> 
+     <image src='/img/enter.png'></image>  
+   </view> 
+  <view class='link'></view>
+
+   <view class='span'> 
+     <text>分类</text>
+     <image src='/img/enter.png'></image>  
+   </view>   
+</view>
+
+<view class='buttom'>
+  <button>确认发布</button>
+</view>

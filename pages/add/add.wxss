@@ -1,0 +1,75 @@
+.link{
+  height: 5rpx;
+  background-color: #ECECEC;
+  width: 95%;
+  position: relative;
+  left: 20rpx;
+}
+.top-card{
+  background-color: white;
+  width: 100%;
+  height: 730rpx;
+  border-radius: 20rpx;
+}
+
+.top-card .title{
+  height: 70rpx;
+  margin-left: 30rpx;
+  padding-top:20rpx; 
+  font-size: 30rpx;
+}
+
+.top-card .describle{
+  margin-left:30rpx; 
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.buttom-card{
+  margin-top: 50rpx;
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+.buttom-card .span{
+  position: relative;
+  top: 30rpx;
+  left: 30rpx;
+  font-size: 35rpx;
+  flex: 1;
+}
+.buttom-card image{
+  position: relative;
+  right: 50rpx;
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.buttom{
+  width: 100%;
+  position:fixed;
+  bottom:0;
+  background-color: white;
+}
+.buttom button{
+  margin: 15rpx; 
+  background-color: red;
+}
+.img-span{
+  position: relative;
+  top: 400rpx;
+  left: 40rpx;
+}
+
+.img{
+  margin: 10rpx;
+  width:140rpx;
+  height: 140rpx;
+  background-color: red;
+}

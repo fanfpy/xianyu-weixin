@@ -1,0 +1,69 @@
+.title-card{
+  background-color: #ED4334;
+  border-radius: 20rpx;
+  height: 400rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.title-card view .touxiang{
+   margin-top: 100rpx; 
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  background-color: white;
+}
+.link{
+  height: 5rpx;
+  background-color: #ECECEC;
+  width: 95%;
+  position: relative;
+  left: 20rpx;
+}
+.box{
+  position: relative;
+  top: 20rpx;
+  height: 400rpx; 
+  width:100%;
+  background-color: white;
+  border-radius: 10rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+.box .box-span{
+   margin: 20rpx; 
+}
+.box view .left{
+  position: relative;
+  top: 25rpx;
+  left: 30rpx;
+  font-size: 35rpx;
+}
+.box view .right{
+  position: relative;
+  float: right;
+  top: 25rpx;
+  right: 20rpx;
+}
+
+.box view image{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+} 
+
+.box2{
+  position: relative;
+  top: 70rpx;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.box2 text{
+  position: absolute; 
+  top: 25rpx;
+  left: 50rpx;
+  font-size: 35rpx;
+}

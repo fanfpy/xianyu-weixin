@@ -1,0 +1,41 @@
+<view class='title-card'>
+  <view>
+    <image class='touxiang'></image>
+  </view>
+  <text>用户名</text>
+</view>
+
+<view class='box'>
+  <view class='box-span' style='flex:1'>
+    <text class='left'>我发布的</text>
+    <view class='right'>
+      <text>0</text>
+      <image src='/img/enter.png'></image>
+    </view>
+  </view>
+
+  <view class='link'></view>
+
+  <view class='box-span' style='flex:1'>
+    <text class='left'>我发布的</text>
+    <view class='right'>
+      <text>0</text>
+      <image src='/img/enter.png'></image>
+    </view>
+  </view>
+
+  <view class='link'></view>
+
+  <view class='box-span' style='flex:1'>
+    <text class='left'>我发布的</text>
+    <view class='right'>
+      <text>0</text>
+      <image src='/img/enter.png'></image>
+    </view>
+  </view>
+
+</view>
+
+<view class='box2'>
+  <text>设置</text>
+</view>
