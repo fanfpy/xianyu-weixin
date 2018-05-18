@@ -5,6 +5,11 @@ Page({
     isUser:false
   },
   onLoad: function () {
+  //   if(true){
+  //     wx.navigateTo({
+  //       url: '/pages/login/login'
+  //     })
+  //   }
     var that = this;
     // 查看是否授权
     wx.getSetting({
@@ -30,7 +35,4 @@ Page({
       }
     })
   },
-  bindGetUserInfo: function (e) {
-    console.log(e.detail.userInfo)
-  }
 })

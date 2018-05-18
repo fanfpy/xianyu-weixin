@@ -1,0 +1,41 @@
+/* pages/register/register.wxss */
+page{
+  background-image:url("https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-5-17/36345731.jpg");
+  background-size:cover;
+    text-align: center;   
+}
+
+.box{
+  background-color: white;
+  width:90%;
+  /* height: 750rpx; */
+  margin-top: 100rpx;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20rpx;
+}
+
+.form{
+   padding:40rpx;   
+}
+
+.form .input{
+  /* text-indent: 30rpx; */
+   margin: 50rpx; 
+   height: 100rpx;
+}
+
+.box .form .input .icon{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.box .form .input .input-box{
+   /* float: right; */
+   border-bottom: 1rpx solid; 
+}
+.box .form button{
+  width: 150rpx;
+  border-radius: 50rpx;
+}

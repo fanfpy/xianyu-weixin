@@ -4,12 +4,13 @@
     "pages/logs/logs",
     "pages/my/my",
     "pages/add/add",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "校园闲鱼",
+    "navigationBarTitleText": "校园二手交易平台",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

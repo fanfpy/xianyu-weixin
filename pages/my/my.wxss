@@ -82,11 +82,3 @@
   left: 50rpx;
   font-size: 35rpx;
 }
-
-.button{
-  position: relative;
-  top: 140rpx;
-  width: 130rpx;
-  height: 100rpx;
-  border-radius: 50rpx;
-}

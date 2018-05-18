@@ -3,9 +3,9 @@
     <image class='touxiang' src='{{userInfo.avatarUrl}}'></image>
   </view>
   <view wx:else="{{isUser}}">
-    <button class='button'  wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"><text>登陆</text></button> 
   </view>
   <text>{{userInfo.nickName}}</text>
+  <button class='button'  wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"><text>登陆</text></button> 
 </view>
 
 
