@@ -54,7 +54,7 @@
 
 .goods-card {
   width: 95%;
-  height: 300rpx;
+  height: 290rpx;
   margin: 20rpx;
   background-color: #fff;
   border-radius: 10rpx;
@@ -96,15 +96,8 @@
 
 .goods-img-layout_horizontal image {
   /* width: 50rpx; */
-  height: 140rpx;
+  height: 160rpx;
   margin: 10rpx;
-}
-
-.goods-card .goods-miaoshu {
-  position: relative;
-  left: 20rpx;
-  top: -10rpx;
-  font-size: 24rpx;
 }
 
 .box {

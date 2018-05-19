@@ -42,89 +42,27 @@
   <button class='title' style='flex:1'>热门</button>
 </view>
 
+
+<view wx:for="{{goods}}">
   <view class='goods-card'>
     <view class='box'>
       <view class='box1'>
        <image class='user-img' src='/img/book.png'></image> 
       </view>
       <view class='box2'>
-       <text class='goods-title'>商品名</text> 
-       <text class='box3' class='goods-price'>￥1099</text> 
+       <text class='goods-title'>{{item.goodsTitle}}</text> 
+       <text class='box3' class='goods-price'>￥{{item.price}}</text> 
       </view>
-      <view class='box3'>
-       <text class='goods-time'>上架时间</text> 
-      </view>            
+       <view class='box3'>
+       <text class='goods-time'>{{item.date}}</text> 
+      </view>             
     </view>
     <view class='goods-img-layout_horizontal'>
       <image style='flex:1' src='/img/clothes.png'></image>
       <image style='flex:1' src='/img/clothes.png'></image>          
       <image style='flex:1' src='/img/clothes.png'></image>                          
     </view>
-    <text class='goods-miaoshu'>小米mix2s 8+256G 99新</text>
+    <!-- <text class='goods-miaoshu'>{{item.describle}}</text> -->
   </view>
-  
-
-  <view class='goods-card'>
-    <view class='box'>
-      <view class='box1'>
-       <image class='user-img' src='/img/book.png'></image> 
-      </view>
-      <view class='box2'>
-       <text class='goods-title'>商品名</text> 
-       <text class='box3' class='goods-price'>￥1099</text> 
-      </view>
-      <view class='box3'>
-       <text class='goods-time'>上架时间</text> 
-      </view>            
-    </view>
-    <view class='goods-img-layout_horizontal'>
-      <image style='flex:1' src='/img/clothes.png'></image>
-      <image style='flex:1' src='/img/clothes.png'></image>          
-      <image style='flex:1' src='/img/clothes.png'></image>                          
-    </view>
-    <text class='goods-miaoshu'>小米mix2s 8+256G 99新</text>
-  </view>
-
-  <view class='goods-card'>
-    <view class='box'>
-      <view class='box1'>
-       <image class='user-img' src='/img/book.png'></image> 
-      </view>
-      <view class='box2'>
-       <text class='goods-title'>商品名</text> 
-       <text class='box3' class='goods-price'>￥1099</text> 
-      </view>
-      <view class='box3'>
-       <text class='goods-time'>上架时间</text> 
-      </view>            
-    </view>
-    <view class='goods-img-layout_horizontal'>
-      <image style='flex:1' src='/img/clothes.png'></image>
-      <image style='flex:1' src='/img/clothes.png'></image>          
-      <image style='flex:1' src='/img/clothes.png'></image>                          
-    </view>
-    <text class='goods-miaoshu'>小米mix2s 8+256G 99新</text>
-  </view>
-
-  <view class='goods-card'>
-    <view class='box'>
-      <view class='box1'>
-       <image class='user-img' src='/img/book.png'></image> 
-      </view>
-      <view class='box2'>
-       <text class='goods-title'>商品名</text> 
-       <text class='box3' class='goods-price'>￥1099</text> 
-      </view>
-      <view class='box3'>
-       <text class='goods-time'>上架时间</text> 
-      </view>            
-    </view>
-    <view class='goods-img-layout_horizontal'>
-      <image style='flex:1' src='/img/clothes.png'></image>
-      <image style='flex:1' src='/img/clothes.png'></image>          
-      <image style='flex:1' src='/img/clothes.png'></image>                          
-    </view>
-    <text class='goods-miaoshu'>小米mix2s 8+256G 99新</text>
-  </view>
-
+</view>
 

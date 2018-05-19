@@ -4,13 +4,26 @@ var app = getApp();
 
 Page({
   data: {
-    tabbar: {},
     imgUrls: [
       '/img/lunbo3.jpg',
       '/img/lunbo2.png',
       '/img/lunbo1.jpg',
       '/img/lunbo4.jpg'
-    ]
+    ],
+    goods:null,
+  },
+
+  onShow:function(){
+    var that= this
+    wx.request({
+      url: app.data.apiUrl+'/goods/hot/list',
+      success:function(res){
+          that.setData({
+            goods:res.data.data
+          })
+          console.log("你在哪里" + app.data.openid)
+      }
+    })
   }
 })
 
