@@ -14,6 +14,7 @@ Page({
   },
 
   onShow:function(){
+    console.log("检测首页是否能取值" + app.data.userInfo.nickName);
     var that= this
     wx.request({
       url: app.data.apiUrl+'/goods/hot/list',
@@ -21,7 +22,7 @@ Page({
           that.setData({
             goods:res.data.data
           })
-          console.log("你在哪里" + app.data.openid)
+          //console.log("你在哪里" + app.data.openid)
       }
     })
   }
