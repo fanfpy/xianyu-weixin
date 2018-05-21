@@ -1,10 +1,10 @@
 <view class='top-card'>
   <view class='title'>
-    <text >标题品牌型号买家搜索内容</text>
+    <input placeholder="标题品牌型号买家搜索内容"></input>
   </view>
   <view class='link'></view>
   <view class='describle'>
-    <text>商品描述</text>
+  <input placeholder='商品描述'></input>
   </view>
 
   <view class='img-span'>
@@ -16,8 +16,7 @@
 
 <view class='buttom-card'>
    <view class='span'> 
-     <text>价格</text> 
-     <image src='/img/enter.png'></image>  
+   <input placeholder='价格' type='digit'></input>
    </view> 
   <view class='link'></view>
 

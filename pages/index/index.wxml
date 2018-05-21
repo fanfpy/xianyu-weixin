@@ -43,11 +43,12 @@
 </view>
 
 
-<view wx:for="{{goods}}">
+<view wx:for="{{goods}}" >
+<navigator url='/pages/goodsInfo/goodsInfo?id={{item.goodsId}}' hover-class="navigator-hover">
   <view class='goods-card'>
     <view class='box'>
       <view class='box1'>
-       <image class='user-img' src='/img/book.png'></image> 
+       <image class='user-img' src='{{item.userImg}}'></image> 
       </view>
       <view class='box2'>
        <text class='goods-title'>{{item.goodsTitle}}</text> 
@@ -58,11 +59,12 @@
       </view>             
     </view>
     <view class='goods-img-layout_horizontal'>
-      <image style='flex:1' src='/img/clothes.png'></image>
-      <image style='flex:1' src='/img/clothes.png'></image>          
-      <image style='flex:1' src='/img/clothes.png'></image>                          
+      <view class='img-float'  wx:for="{{item.goodsImgList}}">
+        <image style='flex:1' src='{{item}}'></image>
+      </view>                     
     </view>
     <!-- <text class='goods-miaoshu'>{{item.describle}}</text> -->
   </view>
+</navigator>
 </view>
 

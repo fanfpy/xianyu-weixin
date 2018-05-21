@@ -11,7 +11,6 @@ App({
   onLaunch: function (e) {
     //"getOenid"
     this.getOpenid();
-    
   },
 
     getOpenid:function(){

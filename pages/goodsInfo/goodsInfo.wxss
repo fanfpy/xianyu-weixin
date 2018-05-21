@@ -1,0 +1,108 @@
+/* pages/goodsInfo/goodsInfo.wxss */
+.link{
+  height: 5rpx;
+  background-color: #ECECEC;
+  width: 95%;
+  position: relative;
+  left: 20rpx;
+}
+
+.goods{
+  background-color: white;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+.goods .user-info{
+  width: 100%;
+  height: 70rpx;
+}
+.goods .user-info .user-img{
+  float: left;
+  width: 70rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.goods .user-info .user-name{
+  float: left;
+  height: 50%;
+  width: 50%;
+  /* background-color: red; */
+   font-size: 30rpx; 
+}
+.goods .user-info .user-date{
+  float: left;
+  height: 50%;
+  width: 50%;
+  font-size: 20rpx;
+  /* background-color: blue; */
+}
+.goods-info text{
+   text-indent :100rpx;
+   text-align: left;
+}
+.goods .goods-img {
+  margin: 20rpx auto;
+  display: block;
+}
+
+
+.footer{
+   position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  background-color: white;
+  height: 90rpx;
+  border-top: solid 1rpx gray;
+}
+.footer .left{
+  float: left;
+  margin: 10rpx;
+}
+.footer .left .img{
+  /* margin-top: 10rpx; */
+  position: relative;
+  top: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.footer .left text{
+  font-size: 30rpx;
+}
+.footer .right{
+  float: right;
+  margin: 10rpx;
+}
+.footer .right button{
+  height: 70rpx;
+  background-color: red;
+  font-size: 30rpx;
+}
+
+.comments{
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom:120rpx;
+}
+.comments .comments-info{
+  margin: 20rpx;
+}
+
+.comments .comments-info .user-img{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+}
+.comments .comments-info .user-name{
+  font-size: 30rpx;
+}
+.comments .comments-info .comments-data{
+  float: right; 
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+
+.comments .comments-info .user-comments-content{
+  font-family: Arial,Verdana,Sans-serif;
+}

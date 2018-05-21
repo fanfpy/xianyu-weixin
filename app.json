@@ -5,7 +5,7 @@
     "pages/my/my",
     "pages/add/add",
     "pages/mine/mine",
-    "pages/register/register"
+    "pages/goodsInfo/goodsInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

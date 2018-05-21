@@ -89,15 +89,20 @@
 }
 
 .goods-img-layout_horizontal {
-  display: flex;
+  /* display: flex;
   /*row 横向  column 列表  */
-  flex-direction: row;
+  /* flex-direction: row; */padding: auto;
+}
+.goods-img-layout_horizontal .img-float{
+  float: left;
+  width: 33.3%;
 }
 
 .goods-img-layout_horizontal image {
   /* width: 50rpx; */
-  height: 160rpx;
-  margin: 10rpx;
+   margin: 20rpx;
+   height: 150rpx;
+    width: 85% 
 }
 
 .box {
