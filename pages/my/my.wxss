@@ -90,4 +90,5 @@
   width: 130rpx;
   height: 100rpx;
   border-radius: 50rpx;
+  padding: 0rpx;
 }

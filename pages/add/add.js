@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    img:null
   },
 
   /**
@@ -62,5 +62,34 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  updataimg:function(){
+    var that = this
+    wx.chooseImage({
+      success: function (res) {
+        //
+        var tempFilePaths = res.tempFilePaths
+        that.setData({
+          img: tempFilePaths
+        })
+        console.log("临时路径"+tempFilePaths)
+        // wx.uploadFile({
+        //   url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+        //   filePath: tempFilePaths[0],
+        //   name: 'file',
+        //   formData: {
+        //     'user': 'test'
+        //   },
+        //   success: function (res) {
+        //     var data = res.data
+        //     //do something
+        //   }
+        // })
+      }
+    })
+  },
+  tijiao:function(){
+    
   }
 })

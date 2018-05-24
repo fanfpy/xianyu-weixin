@@ -71,5 +71,4 @@
   margin: 10rpx;
   width:140rpx;
   height: 140rpx;
-  background-color: red;
 }

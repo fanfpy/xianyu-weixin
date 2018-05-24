@@ -8,9 +8,8 @@
   </view>
 
   <view class='img-span'>
-    <image class='img'></image>
-    <image class='img'></image>
-    <button></button>
+    <image wx:for="{{img}}" src='{{item}}' bindtap='updateimg' class='img'></image>
+    <image src='/img/add_image.png' bindtap='updataimg' class='img'></image>
   </view> 
 </view>
 
@@ -27,5 +26,5 @@
 </view>
 
 <view class='buttom'>
-  <button>确认发布</button>
+  <button bindtap='tijiao'>确认发布</button>
 </view>

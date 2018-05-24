@@ -25,7 +25,6 @@ Page({
           goods: res.data.data
         })
         //console.log("你在哪里" + app.data.openid)
-        console.log(that.data.goods)
       }
     })
   },
