@@ -50,7 +50,8 @@ Page({
               userInfoForSql:res.data.data,
               isUser: true,
             })
-            // app.data.userInfo = res.data.data
+            //同时把数据也传递给全局变量userInfo
+            app.data.userInfo = res.data.data
             console.log(that.data.userInfoForSql)
           }
         }

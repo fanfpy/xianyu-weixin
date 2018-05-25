@@ -48,7 +48,7 @@
 
 
 .footer{
-   position: fixed;
+  position: fixed;
   bottom: 0rpx;
   width: 100%;
   background-color: white;
@@ -61,7 +61,7 @@
 }
 .footer .left .img{
   /* margin-top: 10rpx; */
-  position: relative;
+  position: absolute;
   top: 15rpx;
   width: 50rpx;
   height: 50rpx;

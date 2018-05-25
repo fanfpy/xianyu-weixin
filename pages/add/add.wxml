@@ -1,10 +1,11 @@
-<view class='top-card'>
+<form bindsubmit="formSubmit">
+  <view class='top-card'>
   <view class='title'>
-    <input placeholder="标题品牌型号买家搜索内容"></input>
+    <input name="name" placeholder="标题品牌型号买家搜索内容"></input>
   </view>
   <view class='link'></view>
   <view class='describle'>
-  <input placeholder='商品描述'></input>
+  <input name="describle" placeholder='商品描述'></input>
   </view>
 
   <view class='img-span'>
@@ -14,8 +15,8 @@
 </view>
 
 <view class='buttom-card'>
-   <view class='span'> 
-   <input placeholder='价格' type='digit'></input>
+   <view class='span'>
+   <input name="price" placeholder='价格' type='digit'></input>
    </view> 
   <view class='link'></view>
 
@@ -26,5 +27,6 @@
 </view>
 
 <view class='buttom'>
-  <button bindtap='tijiao'>确认发布</button>
+  <button form-type='submit'>确认发布</button>
 </view>
+</form>

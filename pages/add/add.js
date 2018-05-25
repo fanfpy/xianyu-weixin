@@ -67,29 +67,37 @@ Page({
   updataimg:function(){
     var that = this
     wx.chooseImage({
+      sourceType: ['album', 'camera'], 
       success: function (res) {
         //
         var tempFilePaths = res.tempFilePaths
         that.setData({
           img: tempFilePaths
         })
-        console.log("临时路径"+tempFilePaths)
-        // wx.uploadFile({
-        //   url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
-        //   filePath: tempFilePaths[0],
-        //   name: 'file',
-        //   formData: {
-        //     'user': 'test'
-        //   },
-        //   success: function (res) {
-        //     var data = res.data
-        //     //do something
-        //   }
-        // })
+        console.log(res.tempFiles)
+        // console.log("临时路径"+tempFilePaths)
       }
     })
   },
-  tijiao:function(){
-    
+  formSubmit:function(e){
+    console.log("ceshi")
+    console.log(e.detail.value)
+    var that = this
+    // wx.uploadFile({
+    //   url: app.data.apiUrl+'/goods/add',
+    //   filePath: that.data.img[0],
+    //   name: 'file',
+    //   formData:{
+      //从全局变量userInfo中获取
+    //     userId: e.detail.value.userId,
+    //     classificationId: e.detail.value.classificationId,
+    //     commetNum:0,
+    //     describle: e.detail.value.describle,
+    //     name: e.detail.value.name,
+    //     price: e.detail.value.pirce,
+    //     status:0,
+    //     pageView:0,
+    //   }
+    // })
   }
 })
