@@ -14,9 +14,9 @@
       {{goodsInfo.describle}}
     </text>
   </view>
-<view wx:for="{{goodsInfo.goodsImgList}}">
-  <image  class='goods-img' src='{{item}}'></image>
-</view>
+ <view class='goods-img'> 
+  <image wx:for="{{goodsInfo.goodsImgList}}"   src='{{item}}'></image>
+ </view> 
 
 </view>
 
@@ -41,7 +41,6 @@
 <view class='footer'>
   <view class='left'>
     <image class='img' src='/img/xiaoxi.png'></image>
-    <text>  留言</text>
   </view>
   <view class='right'>
     <button>我想要</button>

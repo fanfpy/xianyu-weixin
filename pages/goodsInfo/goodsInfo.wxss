@@ -42,10 +42,13 @@
    text-align: left;
 }
 .goods .goods-img {
-  margin: 20rpx auto;
-  display: block;
+  display: flex;
+  flex-direction:column; 
 }
-
+.goods .goods-img image{
+  margin: 10rpx auto;
+  width: 95%;
+}
 
 .footer{
   position: fixed;
@@ -62,7 +65,8 @@
 .footer .left .img{
   /* margin-top: 10rpx; */
   position: absolute;
-  top: 15rpx;
+  left: 20rpx;
+  top: 20rpx;
   width: 50rpx;
   height: 50rpx;
 }
@@ -72,6 +76,7 @@
 .footer .right{
   float: right;
   margin: 10rpx;
+  margin-right: 20rpx;
 }
 .footer .right button{
   height: 70rpx;

@@ -1,3 +1,5 @@
+var app = getApp();
+
 Page({
 
   /**
@@ -31,9 +33,24 @@ Page({
         url: '/pages/index/index'
       });
     } else {
-      wx.navigateTo({
-        url: '/pages/add/add'
-      })
+      console.log(app.data.userInfo)
+      if(app.data.userInfo==null){
+        wx.showModal({
+          title: '您暂未登陆',
+          content:"跳转至登录页",
+          showCancel:false,
+          success:function(){
+            wx.switchTab({
+              url: '/pages/my/my',
+            })
+          }
+        })
+        
+      }else{
+        wx.navigateTo({
+          url: '/pages/add/add'
+        })
+      }
     }
   },
 
