@@ -9,6 +9,26 @@ Page({
     userInfoForSql:null
   },
  
+ onLoad:function(){
+   var that = this
+   if(that.data.userInfoForSql==null){
+     wx.request({
+       url: app.data.apiUrl + '/user/openid/' + app.data.openid,
+       method: 'GET',
+       success:function(res){
+         if(res.data.data!=null){
+           that.setData({
+             userInfoForSql: res.data.data,
+             isUser: true,
+           })
+         }
+         console.log("my页 26行")
+         console.log(res.data.data)
+         app.data.userInfo = res.data.data
+       }
+     })
+   }
+ },
 
   bindGetUserInfo: function (e) {
     var that = this 

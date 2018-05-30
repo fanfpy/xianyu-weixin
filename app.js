@@ -4,13 +4,14 @@ App({
 
   data:{
       openid:null,
-      apiUrl:'http://127.0.0.1:8080/api',
+      apiUrl:'http://2.fanfpy.top/xianyu/api',
       userInfo:null
   },
 
   onLaunch: function (e) {
+    var that = this
     //"getOenid"
-    this.getOpenid();
+    console.log(that.getOpenid())
   },
 
     getOpenid:function(){
@@ -29,18 +30,12 @@ App({
               },
               success: function (res) {
                 that.data.openid = res.data.openid;
-                //console.log("openid   " + res.data.openid)
-                console.log("你特么到低啥时候执行的" + res.data.openid+"  "+that.data.openid)
+                console.log("openid= "+that.data.openid)
               }
             })
           }
         }
       });
     },
-
-    isUser:function(openid){
-      var that = this
-      
-    }
 })
 

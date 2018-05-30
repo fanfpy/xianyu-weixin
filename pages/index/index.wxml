@@ -38,8 +38,8 @@
 </view>
 
 <view class='layout_horizontal'>
-  <button class='title' style='flex:1'>最新</button>
-  <button class='title' style='flex:1'>热门</button>
+  <button bindtap='newList' class='title' style='flex:1'>最新</button>
+  <button bindtap='hotList' class='title' style='flex:1'>热门</button>
 </view>
 
 

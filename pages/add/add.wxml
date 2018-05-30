@@ -21,8 +21,8 @@
   <view class='link'></view>
 
    <view class='span'> 
-   <picker bindchange="bindPickerChange" range-key="name" range="{{classification}}" value='index'>
-      分类:{{name}}
+   <picker bindchange="bindPickerChange" range-key='name' range="{{classification}}" value='{{index}}'>
+      分类:<text>日了狗{{classification[index].name}}</text>
   </picker>
    </view>   
 </view>

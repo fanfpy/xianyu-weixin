@@ -11,22 +11,51 @@ Page({
       '/img/lunbo4.jpg'
     ],
     goods:null,
+    num:5, //默认首页初始化五条商品信息
+    isList:"new"
   },
 
   onShow:function(){
-    
-  },
-  onLoad:function(){
     var that = this
     wx.request({
-      url: app.data.apiUrl + '/goods/hot/list',
+      url: app.data.apiUrl + '/goods/'+that.data.isList+'/'+ that.data.num,
       success: function (res) {
         that.setData({
           goods: res.data.data
         })
-        //console.log("你在哪里" + app.data.openid)
       }
     })
   },
+  onLoad:function(){
+    
+  },
+  onReachBottom:function(){
+    var that = this
+    that.setData({
+      num:that.data.num+=2
+    })
+      wx.request({
+        url: app.data.apiUrl + '/goods/'+that.data.isList+'/'+ that.data.num,
+        success: function (res) {
+          that.setData({
+            goods: res.data.data
+          })
+        }
+      })
+  },
+  newList:function(){
+    var that = this 
+    this.setData({
+      isList:"new"
+    })
+    that.onShow()
+  },
+  hotList: function () {
+    var that = this
+    this.setData({
+      isList: "hot"
+    })
+    that.onShow()
+  }
 })
 

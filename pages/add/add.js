@@ -73,17 +73,27 @@ Page({
         title: '商品描述不能为空',
         icon:"none"
       })
-    } else if (value.price<0){
+    } else if (value.price < 0 || value.price==""){
       wx.showToast({
         title: '价格不能小于零',
         icon:"none"
       })
+    }else if(that.data.img==null){
+      wx.showToast({
+        title: '你最好能添加几张图片',
+        icon: "none"
+      })
+    } else if (that.data.classId==null){
+      wx.showToast({
+        title: '你是不是没选分类啊',
+        icon: "none"
+      })
     }else{
-      console.log("userId:"+ app.data.userInfo.id+
-        "classificationId"+that.data.classId+
-        "describle: "+value.describle+
-        "name: "+value.name,
-        "price: "+value.price,)
+      console.log("userId="+ app.data.userInfo.id+
+        "/nclassificationId="+that.data.classId+
+        "/ndescrible=: "+value.describle+
+        "/nname:="+value.name,
+        "/nprice:="+value.price,)
       wx.request({
         url: app.data.apiUrl + '/goods/add',
         method: 'POST',
