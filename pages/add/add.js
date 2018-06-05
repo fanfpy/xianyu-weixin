@@ -1,4 +1,5 @@
 // pages/add/add.js
+var util = require('../../utils/util.js');
 var app = getApp();
 
 Page({
@@ -37,7 +38,6 @@ Page({
         that.setData({
           classification: res.data.data
         })
-        console.log(that.data.classification)
       }
     })
   },
@@ -73,7 +73,7 @@ Page({
         title: '商品描述不能为空',
         icon:"none"
       })
-    } else if (value.price < 0 || value.price==""){
+    } else if (value.price < 0 || value.price=="" || value.price>99999999){
       wx.showToast({
         title: '价格不能小于零',
         icon:"none"
@@ -90,10 +90,10 @@ Page({
       })
     }else{
       console.log("userId="+ app.data.userInfo.id+
-        "/nclassificationId="+that.data.classId+
-        "/ndescrible=: "+value.describle+
-        "/nname:="+value.name,
-        "/nprice:="+value.price,)
+        " classificationId="+that.data.classId+
+        " describle="+value.describle+
+        " name="+value.name,
+        " price="+value.price,)
       wx.request({
         url: app.data.apiUrl + '/goods/add',
         method: 'POST',
@@ -109,11 +109,17 @@ Page({
           price: value.price,
           status: 0,
           pageView: 0,
+          updateTime: util.formatTime(new Date())
         },
         success: function (res) {
-          console.log(res)
+          console.log(res.data)
           if(that.data.img!=null){
             for (var i = 0; i < that.data.img.length; i++) {
+              wx.showToast({
+                icon: 'loading',
+                title: '正在上传'
+              })
+              console.log(that.data.img[i])
               wx.uploadFile({
                 url: app.data.apiUrl + '/img/add',
                 filePath: that.data.img[i],
@@ -121,7 +127,8 @@ Page({
                 formData: {
                   goodsId: res.data.data.id,
                 },
-                success: function () {
+                success: function (res) {
+                  console.log(res.data)
                   wx.showToast({
                     title: '上传成功',
                   })
@@ -131,6 +138,7 @@ Page({
                 },
                 fail: function () {
                   wx.showToast({
+                    icon:'none',
                     title: '上传失败',
                   })
                 }

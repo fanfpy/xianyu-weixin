@@ -4,7 +4,7 @@ App({
 
   data:{
       openid:null,
-      apiUrl:'http://2.fanfpy.top/xianyu/api',
+      apiUrl:'https://2.fanfpy.top/xianyu/api',
       userInfo:null
   },
 

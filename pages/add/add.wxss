@@ -10,6 +10,7 @@
   width: 100%;
   height: 730rpx;
   border-radius: 20rpx;
+  position: relative;
 }
 
 .top-card .title{
@@ -62,9 +63,10 @@
   background-color: red;
 }
 .img-span{
-  position: relative;
-  top: 400rpx;
+  position: absolute;
+  /* top: 400rpx; */
   left: 40rpx;
+  bottom: 20rpx;
 }
 
 .img{
