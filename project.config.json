@@ -64,6 +64,12 @@
 					"name": "goodsinfo",
 					"pathName": "pages/goodsInfo/goodsInfo",
 					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "分类",
+					"pathName": "pages/classInfo/classInfo",
+					"query": "classId=1"
 				}
 			]
 		}

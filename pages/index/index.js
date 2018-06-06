@@ -12,7 +12,12 @@ Page({
     ],
     goods:null,
     num:5, //默认首页初始化五条商品信息
-    isList:"new"
+    isList:"new",
+    classId:{
+        'phone': 1,
+        'book':2,
+        'computer':3,
+      }
   },
 
   onShow:function(){

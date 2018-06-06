@@ -1,0 +1,25 @@
+<!--pages/classInfo/classInfo.wxml-->
+<view wx:for="{{goods}}">
+<navigator url='/pages/goodsInfo/goodsInfo?id={{item.goodsId}}' hover-class="navigator-hover">
+  <view class='goods-card'>
+    <view class='box'>
+      <view class='box1'>
+       <image class='user-img' src='{{item.userImg}}'></image> 
+      </view>
+      <view class='box2'>
+       <text class='goods-title'>{{item.goodsTitle}}</text> 
+       <text class='box3' class='goods-price'>￥{{item.price}}</text> 
+      </view>
+       <view class='box3'>
+       <text class='goods-time'>{{item.date}}</text> 
+      </view>             
+    </view>
+    <view class='goods-img-layout_horizontal'>
+      <view class='img-float'  wx:for="{{item.goodsImgList}}">
+        <image style='flex:1' src='{{item}}'></image>
+      </view>                     
+    </view>
+    <!-- <text class='goods-miaoshu'>{{item.describle}}</text> -->
+  </view>
+</navigator>
+</view>
