@@ -4,7 +4,8 @@ App({
 
   data:{
       openid:null,
-      apiUrl:'http://localhost:8080/api',
+      // apiUrl:'http://localhost:8080/api',
+      apiUrl:'https://2.fanfpy.top/xianyu/api',
       userInfo:null
   },
 
@@ -13,7 +14,6 @@ App({
     //"getOenid"
     console.log(that.getOpenid())
   },
-
     getOpenid:function(){
       var that = this
       wx.login({

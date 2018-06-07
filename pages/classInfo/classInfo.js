@@ -17,8 +17,9 @@ Page({
     wx.request({
       url: app.data.apiUrl +'/goods/classId/'+options.classId,
       success:function(res){
-        if(res.data.code==o){
-          that.setDate({
+        console.log(res.data)
+        if(res.data.code==0){
+          that.setData({
             goods:res.data.data
           })
         }

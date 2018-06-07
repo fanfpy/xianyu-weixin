@@ -9,17 +9,17 @@
 
 <view class='layout_horizontal'>
   <view style='flex:1'>
-  <navigator url='/pages/classInfo/classInfo/?classId={{classId.phone}}'>
+  <navigator url='/pages/classInfo/classInfo?classId={{classId.phone}}'>
      <image class='img' src='/img/phone.png'></image> 
   </navigator>
   </view>
   <view style='flex:1;'>
-  <navigator url='/pages/classInfo/classInfo/?classId={{classId.book}}'>
+  <navigator url='/pages/classInfo/classInfo?classId={{classId.book}}'>
      <image class='img' src='/img/book.png'></image>
   </navigator>
   </view>
   <view style='flex:1;'>
-  <navigator url='/pages/classInfo/classInfo/?classId={{classId.computer}}'>
+  <navigator url='/pages/classInfo/classInfo?classId={{classId.computer}}'>
      <image class='img' src='/img/computer.png'></image>
   </navigator> 
   </view>

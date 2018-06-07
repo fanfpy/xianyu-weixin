@@ -35,6 +35,12 @@ Page({
     console.log(e.detail.userInfo)
     var userInfo = e.detail.userInfo
     if(app.data.openid!=null){
+      //添加一个延迟 以免有人手速太快
+      wx.showToast({
+        title: '',
+        icon: 'loading',
+        duration: 1000
+      })
       wx.request({
         //检测此openid是否注册
         url: app.data.apiUrl + '/user/openid/' + app.data.openid,

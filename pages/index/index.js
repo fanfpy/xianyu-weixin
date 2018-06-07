@@ -21,6 +21,7 @@ Page({
   },
 
   onShow:function(){
+    
     var that = this
     wx.request({
       url: app.data.apiUrl + '/goods/'+that.data.isList+'/'+ that.data.num,
@@ -32,12 +33,21 @@ Page({
     })
   },
   onLoad:function(){
-    
+    wx.showToast({
+      title: '',
+      icon: 'loading',
+      duration: 1000
+    })
   },
   onReachBottom:function(){
     var that = this
+    wx.showToast({
+      title: '',
+      icon:'loading',
+      duration:1000
+    })
     that.setData({
-      num:that.data.num+=2
+      num:that.data.num+=5
     })
       wx.request({
         url: app.data.apiUrl + '/goods/'+that.data.isList+'/'+ that.data.num,

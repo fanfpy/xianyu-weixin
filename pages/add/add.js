@@ -89,6 +89,12 @@ Page({
         icon: "none"
       })
     }else{
+      //这里添加一个延迟 以免用户多次添加
+      wx.showToast({
+        title: '发布中',
+        icon:'loading',
+        duration:30000
+      })
       console.log("userId="+ app.data.userInfo.id+
         " classificationId="+that.data.classId+
         " describle="+value.describle+
