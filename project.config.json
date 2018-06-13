@@ -49,20 +49,8 @@
 				},
 				{
 					"id": -1,
-					"name": "test",
-					"pathName": "pages/mine/mine",
-					"query": ""
-				},
-				{
-					"id": -1,
 					"name": "my",
 					"pathName": "pages/my/my",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "goodsinfo",
-					"pathName": "pages/goodsInfo/goodsInfo",
 					"query": ""
 				},
 				{
