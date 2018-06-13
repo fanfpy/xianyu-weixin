@@ -1,8 +1,13 @@
-# weixin
-##校园二手交易平台微信小程序前端页面 暂未完工
+# 微信小程序 - 校园二手交易平台 
 
-![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-5-12/22600423.jpg)
+##校园二手交易平台微信小程序前端页面 应为不是专业前端 UI做的一般 
 
-![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-5-12/76345598.jpg)
+##后端项目 [https://github.com/fanfpy/xiaoyuanxianyu](https://github.com/fanfpy/xiaoyuanxianyu "https://github.com/fanfpy/xiaoyuanxianyu")
 
-![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-5-12/83726883.jpg)
+![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-6-13/48690444.jpg)
+
+
+![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-6-13/31054093.jpg)
+
+
+![](https://fanfpy-img.oss-cn-beijing.aliyuncs.com/18-6-13/94686500.jpg)
