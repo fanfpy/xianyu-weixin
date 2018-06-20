@@ -1,4 +1,8 @@
 /* pages/goodsInfo/goodsInfo.wxss */
+/* page{
+  text-align: center
+} */
+
 .link{
   height: 5rpx;
   background-color: #ECECEC;
@@ -44,6 +48,7 @@
 .goods .goods-img {
    display: flex;
    flex-direction:column;  
+   text-align: center
 }
 .goods .goods-img image{
   margin-left:auto;
