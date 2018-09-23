@@ -6,7 +6,8 @@
     "pages/add/add",
     "pages/mine/mine",
     "pages/goodsInfo/goodsInfo",
-    "pages/classInfo/classInfo"
+    "pages/classInfo/classInfo",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

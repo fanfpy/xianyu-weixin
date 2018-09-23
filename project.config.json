@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -58,6 +58,12 @@
 					"name": "分类",
 					"pathName": "pages/classInfo/classInfo",
 					"query": "classId=1"
+				},
+				{
+					"id": 4,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": ""
 				}
 			]
 		}
