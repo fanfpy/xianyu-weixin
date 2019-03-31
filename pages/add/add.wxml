@@ -1,3 +1,11 @@
+<view style='height:40rpx'></view>
+<van-nav-bar
+  title="标题"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onClickLeft"
+/>
+
 <form bindsubmit="formSubmit">
   <view class='top-card'>
   <view class='title'>
@@ -23,7 +31,7 @@
 
    <view class='span'> 
    <picker bindchange="bindPickerChange" range-key='name' range="{{classification}}" value='{{index}}'>
-      分类:<text>日了狗{{classification[index].name}}</text>
+      分类:<text>{{classification[index].name}}</text>
   </picker>
    </view>   
 </view>

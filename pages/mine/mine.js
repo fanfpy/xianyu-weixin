@@ -1,5 +1,5 @@
 var app = getApp();
-
+import Toast from '../../vant/dist/toast/toast.js';
 Page({
 
   /**
@@ -13,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.redirectTo({url:'/pages/add/add'})
   },
 
   /**
@@ -27,54 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // this.data.num++;
-    // if (this.data.num % 2 == 0) {
-    //   wx.switchTab({
-    //     url: '/pages/index/index'
-    //   });
-    // } else {
-    //   console.log(app.data.userInfo)
-    //   if(app.data.userInfo==null){
-    //     wx.showModal({
-    //       title: '您暂未登陆',
-    //       content:"跳转至登录页",
-    //       showCancel:false,
-    //       success:function(){
-    //         wx.switchTab({
-    //           url: '/pages/my/my',
-    //         })
-    //       }
-    //     })
-        
-    //   }else{
-    //     wx.navigateTo({
-    //       url: '/pages/add/add'
-    //     })
-    //   }
-    // }
-    this.data.num++;
-    if(this.data.num%2==0){
-      wx.switchTab({
-        url: '/pages/index/index',
-      })
-    }else{
-      if (app.data.userInfo == null) {
-        wx.showModal({
-          title: '您暂未登陆',
-          content: "跳转至登录页",
-          showCancel: false,
-          success: function () {
-            wx.switchTab({
-              url: '/pages/my/my',
-            })
-          }
-        })
-      } else {
-        wx.navigateTo({
-          url: '/pages/add/add',
-        })
-      }
-    }
+  
   },
 
   /**

@@ -1,12 +1,9 @@
 <view class='title-card'>
-  <view wx:if="{{isUser}}">
-    <image class='touxiang' src='{{userInfoForSql.userImg}}'></image>
+  <view>
+    <image class='touxiang' src='{{userInfo.userImg}}'></image>
     <view>
-      <text>{{userInfoForSql.username}}</text>
+      <text>{{userInfo.username}}</text>
     </view>
-  </view>
-  <view wx:else="{{isUser}}">
-   <button class='button'  wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"><text>登陆</text></button>  
   </view>
 </view>
 

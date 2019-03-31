@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "发布"
+  "navigationBarTitleText": "发布",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "van-nav-bar": "/vant/dist/nav-bar/index"
+  }
 }

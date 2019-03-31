@@ -7,7 +7,8 @@
     "pages/mine/mine",
     "pages/goodsInfo/goodsInfo",
     "pages/classInfo/classInfo",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/authorize/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

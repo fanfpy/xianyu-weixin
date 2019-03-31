@@ -1,1 +1,2 @@
 <!--pages/mine/mine.wxml-->
+<van-toast id="van-toast" />

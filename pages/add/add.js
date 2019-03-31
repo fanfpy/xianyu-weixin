@@ -8,9 +8,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    index:0,
     img:null,
     classId:null,
     classification: null,
+    userInfo:null
   },
 
   /**
@@ -18,6 +20,24 @@ Page({
    */
   onLoad: function (options) {
     
+    var that = this
+    wx.request({
+      url: app.data.apiUrl + '/goods/class',
+      success: function (res) {
+        that.setData({
+          classification: res.data.data
+        })
+      }
+    })
+    wx.getStorage({
+      key: 'userInfo',
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          userInfo: res.data
+        })
+      },
+    })
   },
 
   /**
@@ -31,18 +51,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var that = this
-    wx.request({
-      url: app.data.apiUrl + '/goods/class',
-      success: function (res) {
-        that.setData({
-          classification: res.data.data
-        })
-      }
-    })
+    
   },
 
-
+  onClickLeft:function(){
+    wx.switchTab({url:'/pages/index/index'})
+  },
 
   updataimg:function(){
     var that = this
@@ -90,12 +104,11 @@ Page({
       })
     }else{
       //这里添加一个延迟 以免用户多次添加
-      wx.showToast({
-        title: '发布中',
-        icon:'loading',
-        duration:30000
-      })
-      console.log("userId="+ app.data.userInfo.id+
+      wx.showLoading({
+        title:'发布中ing...',
+        mask:true
+      });
+      console.log("userId="+ that.data.userInfo.id+
         " classificationId="+that.data.classId+
         " describle="+value.describle+
         " name="+value.name,
@@ -107,7 +120,7 @@ Page({
           'content-type': 'application/x-www-form-urlencoded'
         },
         data: {
-          userId: app.data.userInfo.id,
+          userId: that.data.userInfo.id,
           classificationId: that.data.classId,
           commetNum: 0,
           describle: value.describle,
@@ -121,10 +134,6 @@ Page({
           console.log(res.data)
           if(that.data.img!=null){
             for (var i = 0; i < that.data.img.length; i++) {
-              wx.showToast({
-                icon: 'loading',
-                title: '正在上传'
-              })
               console.log(that.data.img[i])
               wx.uploadFile({
                 url: app.data.apiUrl + '/img/add',
@@ -135,9 +144,6 @@ Page({
                 },
                 success: function (res) {
                   console.log(res.data)
-                  wx.showToast({
-                    title: '上传成功',
-                  })
                   wx.switchTab({
                     url: '/pages/index/index',
                   })
@@ -151,7 +157,8 @@ Page({
               })
             }
           }
-        }
+          wx.hideLoading()
+        },
       })
     }
   },
